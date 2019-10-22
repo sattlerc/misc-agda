@@ -1,19 +1,19 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.Reduction where
+module IdentityType.Reduction where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
-open import Frobenius.IdentityType.Inversion
-open import Frobenius.IdentityType.BasicReexports
-open import Frobenius.IdentityType.Respect
-open import Frobenius.IdentityType.DerivedFixedTarget
-open import Frobenius.IdentityType.HigherGroupoidStructure
-open import Frobenius.IdentityType.TransportCoherence
-open import Frobenius.IdentityType.Contractible
-open import Frobenius.IdentityType.Telescope 
+open import Basics
+open import Families
+open import IdentityType.Specification
+open import IdentityType.Inversion
+open import IdentityType.BasicReexports
+open import IdentityType.Respect
+open import IdentityType.DerivedFixedTarget
+open import IdentityType.HigherGroupoidStructure
+open import IdentityType.TransportCoherence
+open import IdentityType.Contractible
+open import IdentityType.Telescope 
 
--- The Paulin-Mohring Frobenius eliminator implies the Martin-Loef Frobenius eliminator.
+-- The Paulin-Mohring eliminator implies the Martin-Loef eliminator.
 module ElimMLFrobFromElimFrob
   {C Q D : Family} {C-intro : Intro C}
   (C-elim-frob-Q-D : ElimFrob C-intro Q D) where
@@ -27,7 +27,7 @@ module ElimMLFrobFromElimFrob
     .J-β T P d a t → PM.J-β (T a) (P a) (d a) t where
     open ElimMLFrob
 
--- The Paulin-Mohring eliminator implies the Paulin-Mohring Frobenius eliminator.
+-- The Paulin-Mohring eliminator implies the Paulin-Mohring eliminator.
 -- I learned this from András Kovács and Rafaël Bocquet.
 module ElimFrobFromElim
   {C Q D : Family}

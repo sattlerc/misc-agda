@@ -1,10 +1,10 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.BasicReexports where
+module IdentityType.BasicReexports where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
-open import Frobenius.IdentityType.Inversion
+open import Basics
+open import Families
+open import IdentityType.Specification
+open import IdentityType.Inversion
 
 -- Helper module.
 -- Re-exports common elimination variants and their dual versions with endpoints swapped.

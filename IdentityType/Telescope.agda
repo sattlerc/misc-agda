@@ -1,10 +1,10 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.Telescope where
+module IdentityType.Telescope where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
-open import Frobenius.IdentityType.DerivedFixedTarget
+open import Basics
+open import Families
+open import IdentityType.Specification
+open import IdentityType.DerivedFixedTarget
 
 module Telescope {C : Family} {C-intro : Intro C} (C-elim : Elim C-intro C) where
   open Family C

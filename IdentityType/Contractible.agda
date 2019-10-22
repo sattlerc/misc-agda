@@ -1,15 +1,15 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.Contractible where
+module IdentityType.Contractible where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
-open import Frobenius.IdentityType.Inversion
-open import Frobenius.IdentityType.BasicReexports
-open import Frobenius.IdentityType.Respect
-open import Frobenius.IdentityType.DerivedFixedTarget
-open import Frobenius.IdentityType.HigherGroupoidStructure
-open import Frobenius.IdentityType.TransportCoherence
+open import Basics
+open import Families
+open import IdentityType.Specification
+open import IdentityType.Inversion
+open import IdentityType.BasicReexports
+open import IdentityType.Respect
+open import IdentityType.DerivedFixedTarget
+open import IdentityType.HigherGroupoidStructure
+open import IdentityType.TransportCoherence
 
 module ContractibilityDefs {C : Family} (C-intro : Intro C) where
   open Family C

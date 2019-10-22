@@ -1,5 +1,5 @@
 {-# OPTIONS --rewriting --confluence-check --double-check  --postfix-projections #-}
-module Frobenius.Basics where
+module Basics where
 
 open import Agda.Primitive public
 

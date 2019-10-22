@@ -1,9 +1,9 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.DerivedFixedTarget where
+module IdentityType.DerivedFixedTarget where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
+open import Basics
+open import Families
+open import IdentityType.Specification
 
 module IntroOps where
   open Family

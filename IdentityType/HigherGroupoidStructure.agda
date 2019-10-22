@@ -1,11 +1,11 @@
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.HigherGroupoidStructure where
+module IdentityType.HigherGroupoidStructure where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
-open import Frobenius.IdentityType.Inversion
-open import Frobenius.IdentityType.BasicReexports
+open import Basics
+open import Families
+open import IdentityType.Specification
+open import IdentityType.Inversion
+open import IdentityType.BasicReexports
 
 -- Higher groupoid structure of identity types.
 -- Assumes elimination of C with respect to itself.

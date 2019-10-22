@@ -1,11 +1,11 @@
 -- Symmetry of identity types.
 -- Assumes elimination of C with respect to itself.
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.Respect where
+module IdentityType.Respect where
 
-open import Frobenius.Basics
-open import Frobenius.Families
-open import Frobenius.IdentityType.Specification
+open import Basics
+open import Families
+open import IdentityType.Specification
 
 module Respect {C D : Family} {C-intro : Intro C} (C-elim-D : Elim C-intro D) (D-intro : Intro D) where
   open Family C

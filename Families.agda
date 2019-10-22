@@ -1,7 +1,7 @@
 {-# OPTIONS --postfix-projections #-}
-module Frobenius.Families where
+module Families where
 
-open import Frobenius.Basics
+open import Basics
 
 record Family : Set₁ where
   field

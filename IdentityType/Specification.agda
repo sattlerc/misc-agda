@@ -1,9 +1,9 @@
 -- Specifications of various kinds of identity types.
 {-# OPTIONS --rewriting --confluence-check --double-check --postfix-projections #-}
-module Frobenius.IdentityType.Specification where
+module IdentityType.Specification where
 
-open import Frobenius.Basics
-open import Frobenius.Families
+open import Basics
+open import Families
 
 -- Type former and constructor for identity type.
 record Intro (C : Family) : Set where
@@ -54,7 +54,7 @@ module Elim' {C : Family} {C-intro : Intro C} {D : Family} (C-elim-D : Elim C-in
   open Elim (abstract-center (singleton-contr C-elim-D) .fst) renaming (J to J'; J-β to J'-β) public
   {-# REWRITE J'-β #-}
 
--- Frobenius variant of Paulin-Mohring eliminator.
+-- variant of Paulin-Mohring eliminator.
 -- Parametrized over two families, one for parameters and one for elimination target.
 record ElimFrob {C : Family} (C-intro : Intro C) (Q D : Family) : Set where
   open Family C
@@ -84,7 +84,7 @@ record ElimFrob {C : Family} (C-intro : Intro C) (Q D : Family) : Set where
       → ----------------------
       J T P d r t == d t
 
--- Frobenius variant of Martin-Loef eliminator.
+-- variant of Martin-Loef eliminator.
 -- Parametrized over two families, one for parameters and one for elimination target.
 record ElimMLFrob {C : Family} (C-intro : Intro C) (Q D : Family) : Set where
   open Family C
